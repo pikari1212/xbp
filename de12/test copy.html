@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>ゲーム</title>
+    <!-- ⑤スタイルシートの設定をしよう --><link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>ゲーム</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <div>
+         <!-- ①↓に文字を書いてみよう --><div>
+            <code>
+                <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+                <li style="background-color:#EFF;">score = 0</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">def display_score():</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("現在の成績メーター: " + str(score) )</li>
+                <li style="background-color:#EFF;"></li>
+                <li style="background-color:#EEF;">def questsion1():</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;global score</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("初回課題.フィールドワークでわかったことから考察しよう")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("A.予想だけで考察する ")</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("B. 数値をメインとした考察をする")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("C. 実際に見て感じたことで考察する")</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;choice = input("選択肢を入力してください (A/B/C): ")</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;if choice == "A":</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「フィールドワークをもっと生かしましょう。」　成績メーター＋5")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 5</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "B":</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「数値に基づいた説得力のあるプレゼンでした。」　成績メーター＋30")</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 30 </li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "C":</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「数値を使ったらもっと良い考察になると思います。」成績メーター＋15")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 15</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display_score()</li>
+                <li style="background-color:#EFF;"></li>
+                <li style="background-color:#EEF;">def questsion2():</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;global score</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("中間課題.3Dプリンターでピンセットをつくる")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("A.機能性にこだわる ")</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("B. ピンセット以外にもいろんな物をつくる")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("C. 海外の人のアイデアをもらう")</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;choice = input("選択肢を入力してください (A/B/C): ")</li>
+                <li style="background-color:#EEF;"></li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;if choice == "A":</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「つかみやすそうな形でおもしろい。」　成績メーター＋15")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 15</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "B":</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「積極性があっていいですね。」　成績メーター＋30")</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 30 </li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "C":</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「自分のアイデアで勝負しましょう。」成績メーター＋5")</li>
+                <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 5</li>
+                <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display_score()</li>
+                <li style="background-color:#EFF;"></li>
+                <li style="background-color:#EEF;">def questsion3():</li>
+                </ol></code>
+
+        </div>
+</body>
+</html>

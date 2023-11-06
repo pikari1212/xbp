@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>コード</title>
+    <!-- ⑤スタイルシートの設定をしよう --><link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>コード</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <div><code>
+        <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+        <li style="background-color:#EFF;">import japanize_kivy</li>
+        <li style="background-color:#EEF;">import urllib.parse</li>
+        <li style="background-color:#EFF;">import kivy</li>
+        <li style="background-color:#EEF;">from kivy.app import App</li>
+        <li style="background-color:#EFF;">from kivy.uix.boxlayout import BoxLayout</li>
+        <li style="background-color:#EEF;">from kivy.uix.textinput import TextInput</li>
+        <li style="background-color:#EFF;">from kivy.uix.button import Button</li>
+        <li style="background-color:#EEF;">import webbrowser</li>
+        <li style="background-color:#EFF;">kivy.require('1.11.1')</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">class HashTagSearchApp(App):</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, **kwargs):</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super().__init__(**kwargs)</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.links = []</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;def build(self):</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.layout = BoxLayout(orientation='vertical')</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.input_text = TextInput(hint_text='enter a hashtag without "#"')</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.add_button = Button(text='search')</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.add_button.bind(on_press=self.search_hashtag)</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.layout.add_widget(self.input_text)</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.layout.add_widget(self.add_button)</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.layout</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;def search_hashtag(self, instance):</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hashtag = self.input_text.text.strip()</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if hashtag:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hashtag = urllib.parse.quote(hashtag)  # キーワードをエンコード</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_url = f'https://bizwd.net/'</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;webbrowser.open(search_url)</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">if __name__ == '__main__':</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;HashTagSearchApp().run()</li>
+        </ol></code>
+         <!-- ①↓に文字を書いてみよう --></div>
+</body>
+</html>
