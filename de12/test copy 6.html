@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>🐤実験中</title>
+    <!-- ⑤スタイルシートの設定をしよう --><link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>見出し</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <div>
+         <!-- ①↓に文字を書いてみよう --><div><code>
+<ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+    <li style="background-color:#EFF;">score = 0</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">def display_score():</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("現在の成績メーター: " + str(score) )</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">def questsion1():</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;global score</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("初回課題.フィールドワークでわかったことから考察しよう")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("A.予想だけで考察する ")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("B. 数値をメインとした考察をする")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("C. 実際に見て感じたことで考察する")</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;choice = input("選択肢を入力してください (A/B/C): ")</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;if choice == "A":</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「フィールドワークをもっと生かしましょう。」　成績メーター＋5")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 5</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "B":</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「数値に基づいた説得力のあるプレゼンでした。」　成績メーター＋30")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 30 </li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "C":</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「数値を使ったらもっと良い考察になると思います。」成績メーター＋15")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 15</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display_score()</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">def questsion2():</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;global score</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("中間課題.3Dプリンターでピンセットをつくる")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("A.機能性にこだわる ")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("B. ピンセット以外にもいろんな物をつくる")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("C. 海外の人のアイデアをもらう")</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;choice = input("選択肢を入力してください (A/B/C): ")</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;if choice == "A":</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「つかみやすそうな形でおもしろい。」　成績メーター＋15")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 15</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "B":</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「積極性があっていいですね。」　成績メーター＋30")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 30 </li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "C":</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("道用先生「自分のアイデアで勝負しましょう。」成績メーター＋5")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 5</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display_score()</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">def questsion3():</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;global score</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("ボーナス課題.外部講師の方の話を聞いてレポートを作成する")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print("A.参加する ")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("B. 友達と遊ぶ")</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;choice = input("選択肢を入力してください (A/B): ")</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if choice == "A":</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("成績メーター＋10")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 10</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif choice == "B":</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("成績メーター＋0")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += 0 </li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display_score()</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">def add_random_score():</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("最終課題.レポートの友達審査")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;global score</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;import random</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;random_score = random.randint(0,50)</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;score += random_score </li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;print(f"成績メーター＋: + {random_score}")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display_score()</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">def main():</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("これは道用先生から単位を獲得するゲームです。課題でもらえる得点で成績メーターをあげましょう。よい成績がもらえるように頑張ってください。")</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;name=input("名前を入れてく入れてください")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;questsion1()</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;questsion2()</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;questsion3()</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;add_random_score()</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;print("これですべての課題が終了しました。あなたの成績は...")</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if score&gt;=59:</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(name,"さん、不可") </li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if score&lt;=60 and score&gt;=69:</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(name,"さん、可")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if score&lt;=70 and score&gt;=79:</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(name,"さん、良")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if score&lt;=80 and score&gt;=89:</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(name,"さん、優")</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if score&lt;=90:</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(name,"さん、秀")</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">if __name__ == "__main__":</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;main()</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;"></li>
+    </ol></code><br>
+    私たちの班はデザイン演習攻略ゲームを作ることにしました。<br>
+    最初は恋愛シュミレーションみたいなのにしようと考えましたがセリフが難しすぎるので断念しました。<br>
+    このゲームはそれぞれの選択肢に点数を振って最後に合算した点数によって成績が決まる仕様です。<br>
+    チャットGPTに色んな質問をしてそれを組み合わせて作成しました。<br>
+    ランダムで点数を合算する部分に苦戦しましたがなんとか形にすることができました。<br>
+</div>
+
+         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
+        </div>
+</body>
+</html>
